@@ -3,173 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../static/takePage.css" />
+    <link rel="stylesheet" href="../static/review_write.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Source+Serif+4:opsz@8..60&display=swap"
       rel="stylesheet"
     />
-    <style>
-      /*nav*/
-      .navbar {
-        width: 97%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 20px;
-      }
-      .title {
-        text-decoration: none;
-        color: black;
-        font-size: 35px;
-        font-family: "Irish Grover";
-      }
-      ul {
-        width: 15vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-      }
-      li,
-      .login {
-        text-decoration-line: none;
-        color: black;
-        font-size: 20px;
-        font-family: "Source Serif 4";
-      }
-      .login {
-        width: 15vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-      }
-
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #fafafa;
-        margin: 0;
-        padding: 0;
-      }
-
-      .container {
-        max-width: 800px;
-        margin: 20px auto;
-        background-color: white;
-        border: 1px solid #ccc;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        font-family: "Irish Grover";
-      }
-
-      .profile-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        background-image: url("profile_background.png");
-        background-size: cover;
-      }
-
-      .profile-image {
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        margin-bottom: 10px;
-      }
-
-      .profile-info,
-      .button-info {
-        text-align: center;
-      }
-
-      .profile-info h1 {
-        margin: 0;
-        font-size: 1.5em;
-      }
-
-      .profile-info p {
-        margin: 5px 0;
-      }
-
-      .follow-button,
-      .home-button,
-      .review-button,
-      .save-button {
-        background-color: white;
-        color: black;
-        padding: 8px 16px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-right: 10px;
-        border-style: ridge;
-        font-family: "Irish Grover";
-      }
-
-      .content_container {
-        background-color: #f44d99;
-      }
-
-      .section {
-        background-color: white;
-        border-radius: 10px;
-        padding: 10px;
-      }
-
-      .review {
-        padding: 20px;
-      }
-
-      .select {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-
-        padding: 15px 10px;
-      }
-      .select input[type="radio"] {
-        display: none;
-      }
-      .select input[type="radio"] + label {
-        display: inline-block;
-        cursor: pointer;
-        height: 24px;
-        width: 90px;
-        border: 1px solid #333;
-        line-height: 24px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 13px;
-      }
-      .select input[type="radio"] + label {
-        background-color: #fff;
-        color: #333;
-      }
-      .select input[type="radio"]:checked + label {
-        background-color: #333;
-        color: #fff;
-      }
-
-      .footer {
-        background-color: #ff53a5;
-        height: 15vh;
-      }
-
-      .footer-content {
-        font-size: 12px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-      }
-    </style>
-    <title>Instagram Profile</title>
+    
   </head>
   <body>
     <nav class="navbar">
@@ -198,7 +39,7 @@
           <br /><br />
           <img
             class="profile-image"
-            src="../image_go_chat/my_photo.png"
+            src="../static/seller_main/img_seller_main/profile_img.png"
             alt="Profile Picture"
           />
         </div>
@@ -218,7 +59,7 @@
             <button class="follow-button">Follow</button>
             <button
               class="review-button"
-              onclick="location.href='review_write.html'"
+              onclick="location.href='../templates/review_write.html'"
             >
               Review
             </button>
@@ -226,9 +67,9 @@
         </div>
       </div>
       <div class="content_container">
-        <img src="divide_line.png" />
+        <img src="../static/review_write/img_review_write/divide_line.png" />
         <br /><br />
-        <div class="review_name"><img src="writereviewtag.png" /></div>
+        <div class="review_name"><img src="../static/review_write_img_review_write/writereviewtag.png" /></div>
         <div class="review">
           <div class="section">
             <h2>🖼 Image</h2>
