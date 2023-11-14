@@ -1,0 +1,41 @@
+.overflow_container {
+  width: 100vw;
+}
+.ima {
+  width: 100%;
+}
+body {
+  margin: 0;
+}
+
+button.btn1 {
+  position: absolute;
+  top: 380px;
+  left: 65px;
+
+  width: 130px;
+  height: 45px;
+
+  background-color: rgba(0, 0, 0, 0);
+}
+button.btn2 {
+  position: absolute;
+  top: 1748px;
+  left: 400px;
+
+  width: 195px;
+  height: 35px;
+
+  background-color: rgba(0, 0, 0, 0);
+}
+
+button.btn3 {
+  position: absolute;
+  top: 2975px;
+  left: 410px;
+
+  width: 195px;
+  height: 35px;
+
+  background-color: rgba(0, 0, 0, 0);
+}
