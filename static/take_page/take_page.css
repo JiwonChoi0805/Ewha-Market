@@ -1,0 +1,161 @@
+/*nav*/
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+}
+.title {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  font-family: "Irish Grover";
+}
+ul {
+  width: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+li,
+.login {
+  text-decoration-line: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Source Serif 4";
+}
+.login {
+  width: 15vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/*본문*/
+.container {
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
+  background-color: #ff53a5;
+}
+.contents {
+  width: 95%;
+  height: 100%;
+  background-color: #ffedfa;
+  padding-bottom: 10vh;
+}
+.keyword {
+  width: 200px;
+  height: 30px;
+  border: none;
+  margin-top: 60px;
+  margin-left: 60px;
+  position: inline;
+  padding: 5px;
+}
+.sort-due,
+.sort-hot {
+  font-size: 14px;
+  font-weight: 600;
+}
+/*상품목록*/
+.items {
+  width: 85%;
+  margin-left: 5%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+.item {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.itemImg {
+  width: 100%;
+  height: 150px;
+}
+
+.itemTitle {
+  font-size: 18px;
+  font-family: "Irish Grover";
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.priceAndDue {
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itemPrice {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Irish Grover";
+}
+
+.itemDue {
+  font-size: 16px;
+  color: red;
+  font-weight: 500;
+  font-family: "Irish Grover";
+}
+
+.viewAndliked {
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.viewMore {
+  width: 100px;
+  height: 30px;
+  background-color: #ff53a5;
+  font-family: "Irish Grover";
+  font-size: 14px;
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.isliked {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+}
+
+/*footer*/
+.footer {
+  background-color: #ff53a5;
+  height: 10vh;
+  width: 100%;
+}
+.footer-content {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}

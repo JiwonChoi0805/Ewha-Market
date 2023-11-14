@@ -1,0 +1,118 @@
+.background {
+  width: 50%;
+  height: 100%;
+  margin-left: 25%;
+  background-color: #ff53a5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90%;
+  height: 80%;
+  background-color: white;
+  margin-top: 100px;
+}
+.tapeTop {
+  position: absolute;
+  width: 130px;
+  top: 85px;
+  left: 435px;
+  z-index: 10;
+}
+.face {
+  position: absolute;
+  width: 120px;
+  top: 75px;
+  left: 710px;
+  z-index: 10;
+}
+.title {
+  font-size: 50px;
+  font-weight: 800;
+  color: #9e2283;
+  margin: 30px;
+}
+
+/*timeline 항목*/
+.timelineContainer {
+  width: 90%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.renewal {
+  width: 95%;
+  height: auto;
+  margin-bottom: 15px;
+
+  display: flex;
+  flex-direction: row;
+}
+.dateAndTime {
+  width: 27%;
+  margin-top: 20px;
+}
+.date {
+  font-size: 22px;
+  color: #9e2283;
+  font-weight: 500;
+}
+.time {
+  font-size: 18px;
+  color: #6b6b6b;
+  font-weight: 500;
+}
+.mentAndUser {
+  width: 73%;
+}
+.ment {
+  background-image: url("../timeline/img_timeline/messageBox.png");
+  background-size: 470px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 115px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 80px;
+}
+.price,
+.ment {
+  font-size: 18px;
+  font-weight: 400;
+}
+.user {
+  color: rgba(135, 11, 11, 0.62);
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+/*close 버튼*/
+.closeBtn {
+  width: 150px;
+  height: 50px;
+  font-size: 40px;
+  font-family: "Irish Grover";
+  color: white;
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  align-self: flex-end;
+  margin-top: 60px;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+.tapeBottom {
+  position: absolute;
+  width: 130px;
+  top: 1080px;
+  left: 1120px;
+  z-index: 10;
+}

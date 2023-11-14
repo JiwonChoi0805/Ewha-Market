@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/takePage.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Source+Serif+4:opsz@8..60&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        .navbar {
+        width: 97%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        }
+        .title {
+        text-decoration: none;
+        color: black;
+        font-size: 35px;
+        font-family: "Irish Grover";
+        }
+        ul {
+        width: 15vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        }
+        li,
+        .login {
+        text-decoration-line: none;
+        color: black;
+        font-size: 20px;
+        font-family: "Source Serif 4";
+        }
+        .login {
+        width: 15vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+          width:40%;
+          margin-left: 30%;
+          background-color: #ffe4f6;
+          border: 1px solid #ccc;
+          padding: 20px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .footer {
+          background-color: #d54389;
+          height: 15vh;
+        }
+        .footer-content {
+          font-size: 12px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 20px;
+        }
+        .column{
+          display:flex;
+          flex-direction:column;
+        }
+        .row{
+          display:flex;
+          flex-direction:row;
+        }
+        .outerBox{
+          display:flex;
+          background-color:#dfdfdf;
+          width:35%;height:380px;
+          border: solid white;
+          border-width: 20px 20px 80px 20px ;
+          font-size:28px;
+        }
+        .bottom{
+          position:relative;top:385px;
+        }
+        .circle{
+          width:28%;height:70px;
+          border-radius:50%/50%;
+          background-color:white;
+          text-align:center;
+          font-size:22px;
+          line-height:3
+        }
+        .plusOutline {
+          width: 27%;
+          height: 270px;
+          background-color: #c40ea3;
+          border-radius:10%/10%;
+        }
+
+        .minusOutline {
+          display:flex;
+          width: 27%;
+          height: 270px;
+          background-color: gray;
+          border-radius:10%/10%;
+        }
+        .bottomLeft{
+          position:relative;top:250px;left:10px;
+        }
+        .size{
+          display:flex;
+          width:15%;height:50px;
+          font-size:25px;
+          border-radius:10%/10%;
+        }
+        .inputSize {
+          display:flex;
+          width: 54%;
+          height: 40px;
+          font-size: 22px;
+        }
+        .finish{
+          background-color: #ff0997;
+          border: 1px solid black;
+          border-radius: 10%/10%;
+          width:20%;height:60px;
+          font-size:30px;
+          color:white;
+          text-align:center;
+        }
+    </style>
+</head>
+
+<body>
+   <nav class="navbar">
+    <div style="display: flex; flex-direction: row; align-items: center">
+      <a href="" class="title">Giboo & Take</a>
+      <ul class="navbar_menu">
+        <li>Giboo</li>
+        <li>Take</li>
+        <li>Charge</li>
+      </ul>
+    </div>
+    <div class="login">
+      <div>login</div>
+      <div>|</div>
+      <div>sign up</div>
+      <img
+        src="../static/icons/profile_img.png"
+        alt="profile"
+        style="width: 50px"
+      />
+    </div>
+  </nav>
+<img src="../static/auction/img_aution/whole.png"alt="nooooo" style="width:42.5%;margin-left: 30%;">
+    <div class="container">
+      <br><br><br><br><br> 
+        <h1 style="position:relative;left:3%">경매종료 <span style="font-size:60px;color:#fe1b9e">D-DAY</h1>
+      
+        <div class="outerBox"style="position:relative;left:2%">
+          <div class="bottom">Item name:<br>빈티지 텔레비전</div>
+        </div>
+        
+          <br><br><br><br><br><br>
+          <div class="circle"style="position:relative;left:50%;bottom:400px;">현재입찰금액</div>
+          <div class="circle"style="position:relative;left:72%;bottom:440px;width:30%;text-align:right">원</div>
+        
+            <div class="plusOutline"style="position:relative;left:45%;bottom:420px">
+              <div class="bottomLeft">add</div>
+            </div>
+
+            <div class="minusOutline"style="position:relative;left:74%;bottom:688px">
+              <div class="bottomLeft">minus</div>
+            </div>
+
+          <input class="size";type='button' onclick='count("plus500")' value='+500' style="position:relative;left:51%;bottom:930px">
+          <input class="size";type='button' onclick='count("plus1000")'value='+1000'style="position:relative;left:51%;bottom:900px">
+          <input class="size";type='button' onclick='count("plus5000")'value='+5000'style="position:relative;left:51%;bottom:870px">
+          <input class="size";type='button' onclick='count("minus500")'value='-500'style="position:relative;left:79%;bottom:1096px">
+          <input class="size";type='button' onclick='count("minus1000")'value='-1000'style="position:relative;left:79%;bottom:1066px">
+          <input class="size";type='button' onclick='count("minus5000")'value='-5000'style="position:relative;left:79%;bottom:1036px">
+          <div id='result' style="position:relative;left:80%;bottom:1370px;font-size:40px">0</div>
+
+          <form method="get" action="">
+                <input class="inputSize" style="position:relative;bottom:1050px;left:45%" type="number" name="number" placeholder="입찰금액을 직접 입력하세요">
+                <input class="finish" type="submit" value="Finish" style="position:relative;bottom:1040px;left:80%;">
+          </form>
+
+        </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <div class="footer">
+      <div>
+        <div class="footer-content">
+          Giboo&Take<br />Copyrightⓒ 2023 by 오소몰 all rights reserved
+        </div>
+        <!--인스타그램 깃허브 아이콘 연결-->
+      </div>
+    </div>
+      
+      <script>
+        function openModal(imageSrc, altText) {
+      var modal = document.getElementById("myModal");
+      var modalContent = document.querySelector(".modal-content");
+      var modalImage = document.getElementById("modalImage");
+
+      // Set the image source and alt text
+      modalImage.src = imageSrc;
+      modalImage.alt = altText;
+
+      // Show the modal
+      modal.style.display = "block";
+
+      // Ensure the image is loaded before calculating dimensions
+      modalImage.onload = function() {
+          // Calculate the aspect ratio of the image
+          var aspectRatio = modalImage.width / modalImage.height;
+
+          // Set the maximum width and height of the image to fit inside the modal
+          var maxWidth = modalContent.clientWidth * 0.9;
+          var maxHeight = window.innerHeight * 0.8;
+
+          // Calculate corresponding width and height based on aspect ratio
+          var width = Math.min(maxWidth, maxHeight * aspectRatio);
+          var height = width / aspectRatio;
+
+          // Set the image dimensions
+          modalImage.style.width = width + "px";
+          modalImage.style.height = height + "px";
+      };
+      }
+
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+
+    // Close modal if clicked outside of the modal content
+    window.onclick = function(event) {
+        var modal = document.getElementById("myModal");
+        if (event.target === modal) {
+            closeModal();
+        }
+    };
+
+        function count(type)  {
+  // 결과를 표시할 element
+  const resultElement = document.getElementById('result');
+  
+  
+  let number = resultElement.innerText;
+  
+  // 더하기/빼기
+  if(type === 'plus500') 
+    number = parseInt(number) + 500;
+  else if(type === 'plus1000') 
+    number = parseInt(number) + 1000;
+    else if(type === 'plus5000') 
+    number = parseInt(number) + 5000;
+    else if(type === 'minus500') 
+    number = parseInt(number) - 500;
+    else if(type === 'minus1000') 
+    number = parseInt(number) - 1000;
+    else if(type === 'minus5000') 
+    number = parseInt(number) - 5000;
+  
+  // 결과 출력
+  resultElement.innerText = number;
+}
+      </script>
+
+</body>
+</html>
