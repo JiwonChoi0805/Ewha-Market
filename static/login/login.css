@@ -1,36 +1,32 @@
-* {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
-body {
-  height: 100vh;
-  width: 100vw;
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
+.background {
   background-image: url("./img_login/loginback.png");
+  width: 80%;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 10%;
+  padding-top: 150px;
+  position: absolute;
+  top: 80px;
 }
 
 .login-wrapper {
   position: relative;
-  left: 380px;
-  top: 150px;
+  left: 480px;
+  top: 50px;
   width: 400px;
   height: 350px;
   padding: 40px;
   box-sizing: border-box;
 }
 
-h1 {
+.welcome {
   position: relative;
-  left: 450px;
-  top: 120px;
-  font-size: 30px;
+  left: 510px;
+  top: -15px;
+  font-size: 60px;
   color: black;
-  margin-bottom: 20px;
+  font-family: "Irish Grover";
 }
 
 #login-form > input {
@@ -74,4 +70,45 @@ h1 {
   background-image: url("checkbox-active.png");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+/*nav*/
+.navbar {
+  position: fixed;
+  z-index: 100;
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+}
+.title {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  font-family: "Irish Grover";
+}
+ul {
+  width: 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+li,
+.login {
+  text-decoration-line: none;
+  color: black;
+  font-size: 20px;
+  font-family: "Source Serif 4";
+}
+.login {
+  width: 15vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }

@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="../static/login/login.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-
-
-  <h1>Welcome!</h1>
-  <div class="login-wrapper">
-
-    <form method="post" action="./join_us.html" id="login-form">
-      <input type="text" name="userName" placeholder="Email">
-      <input type="password" name="userPassword" placeholder="Password">
-      <label for="remember-check">
-        <input type="checkbox" id="remember-check"> 아이디 저장하기
-      </label>
-      <input type="submit" value="Login">
-    </form>
-  </div>
-</body>
-</script>
-
-</body>
-
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>replit</title>
+    <link href="../static/login/login.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Source+Serif+4:opsz@8..60&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
+    <nav class="navbar">
+      <div style="display: flex; flex-direction: row; align-items: center">
+        <a href="" class="title">Giboo & Take</a>
+        <ul class="navbar_menu">
+          <li>Giboo</li>
+          <li>Take</li>
+          <li>Charge</li>
+        </ul>
+      </div>
+      <div class="login">
+        <div>login</div>
+        <div>|</div>
+        <div>sign up</div>
+        <img
+          src="../static/icons/profile_img.png"
+          alt="profile"
+          style="width: 50px"
+        />
+      </div>
+    </nav>
+    <div class="background">
+      <span class="welcome">Welcome!</span>
+      <div class="login-wrapper">
+        <form method="post" action="./main.html" id="login-form">
+          <input type="text" name="userName" placeholder="Email" />
+          <input type="password" name="userPassword" placeholder="Password" />
+          <label for="remember-check">
+            <input type="checkbox" id="remember-check" /> 아이디 저장하기
+          </label>
+          <input type="submit" value="Login" style="margin-top: 50px" />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

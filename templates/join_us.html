@@ -11,33 +11,48 @@
       type="text/css"
     />
   </head>
-  <body>
+  <body topmargin="0" leftmargin="0" marginwidth="0" marginheight="0">
     <div class="this">
-      <form method="post" action="./main.html" id="login-form">
-        <label for="ID"
-          >ID&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&emsp;&emsp;</label
+      <form method="post" action="./login.html" id="login-form">
+        <div class="box">
+          <label for="ID">ID</label>
+          <input class="text" id="ID" type="text" />
+        </div>
+        <div class="box">
+          <label for="PW">PW</label>
+          <input class="text" id="PW" type="password" />
+        </div>
+        <div class="box">
+          <label for="Check">Check PW</label>
+          <input class="text" id="Check" type="password" />
+        </div>
+        <div class="box">
+          <label for="E-mail">E-mail</label>
+          <input class="text" id="E-mail" type="email" />
+        </div>
+        <div class="box">
+          <label for="num">전화번호</label>
+          <input id="num" class="text" type="text" />
+        </div>
+        <div class="box">
+          <label for="Name">Name</label>
+          <input id="Name" class="text" type="text" />
+        </div>
+        <div class="box">
+          <label for="stu">학생증인증</label>
+          <input id="stu" type="file" />
+        </div>
+        <div
+          class="btn"
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+          "
         >
-        <input class="text" id="ID" type="text" /> <br /><br />
-        <label for="PW">PW&emsp; &emsp; &emsp;&emsp;&emsp;&ensp;&emsp;</label>
-        <input class="text" id="PW" type="password" /><br /><br />
-        <label for="Check">Check PW&emsp;&emsp;&emsp;&ensp;&ensp;</label>
-        <input class="text" id="Check" type="password" /><br /><br />
-        <label for="E-mail"
-          >E-mail&emsp;&emsp;&emsp;&ensp;&ensp;&ensp;&ensp;</label
-        >
-        <input class="text" id="E-mail" type="email" /><br /><br />
-        <label for="num">전화번호&emsp;&emsp;&emsp;&ensp;&ensp;</label>
-        <input id="num" class="text" type="text" /><br /><br />
-        <label for="Name"
-          >Name&emsp;&emsp;&emsp;&emsp;&ensp;&ensp; &ensp;</label
-        >
-        <input id="Name" class="text" type="text" /><br /><br />
-        <label for="stu"
-          >학생증
-          인증&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label
-        >
-        <input id="stu" type="file" /><br /><br />
-        <input type="submit" class="sign_up" value="Sign Up" />
+          <input type="submit" class="sign_up" value="Sign Up" />
+        </div>
       </form>
     </div>
   </body>
