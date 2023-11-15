@@ -20,7 +20,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <>
     <nav class="navbar">
       <div style="display: flex; flex-direction: row; align-items: center">
         <a href="" class="title">Giboo & Take</a>
@@ -42,6 +42,7 @@
       </div>
     </nav>
     <!--상단-->
+    <form action="/submit_item_post" method="post" enctype="multipart/form-data"></form>
     <div class="wrapper">
       <div class="contents">
         <img
@@ -69,6 +70,8 @@
             alt="ITEM_BOX"
             style="width: 100%"
           />
+          <label for="img" style="display: none"></label>
+          <input type="file" name="file" />
           <div style="margin-left: 15px">
             <span>
               <img
@@ -168,13 +171,13 @@
             </div>
           </div>
           <div class="item">
-            <input type="radio" id="super" name="condition" value="direct" />
+            <input type="radio" id="super" name="condition" value="super" />
             <label for="super">최상</label>
-            <input type="radio" id="good" name="condition" value="delivery" />
+            <input type="radio" id="good" name="condition" value="good" />
             <label for="good">상</label>
-            <input type="radio" id="soso" name="condition" value="direct" />
+            <input type="radio" id="soso" name="condition" value="soso" />
             <label for="soso">중</label>
-            <input type="radio" id="bad" name="condition" value="delivery" />
+            <input type="radio" id="bad" name="condition" value="bad" />
             <label for="bad">하</label>
           </div>
 
@@ -225,11 +228,11 @@
             <label for="day7">7일</label>
           </div>
 
-          <button class="finish_button">Finish</button>
+          <input type="submit" value="Finish" class="finish_button" />
         </div>
       </div>
     </div>
-
+  </form>
     <!--푸터-->
     <div class="footer">
       <div>
